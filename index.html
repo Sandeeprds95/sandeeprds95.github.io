@@ -7,14 +7,15 @@
 
 
         <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="./stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./plugins/font-awesome/css/font-awesome.min.css">
         <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="./stylesheets/custom.css">
 
         <!-- Scripts -->
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-        <script src="./scripts/jquery-2.1.4.min.js"></script>
-        <script src="./scripts/bootstrap.min.js"></script>
+        <script src="./plugins/jquery.min.js"></script>
+        <script src="./plugins/bootstrap/js/bootstrap.min.js"></script>
 
         <!-- Custom Scripts -->
         <script type="text/javascript" src="./scripts/main.js"></script>
@@ -22,21 +23,20 @@
         <title>Sandeep Ravindra</title>
     </head>
 
-    <body>
+    <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
         <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <i class="fa fa-bars"></i>
-                    </button>
                     <a class="navbar-brand page-scroll" href="#page-top">
-                        <i class="fa fa-play-circle"></i>  <span class="light">Sandeep Ravindra</span>
+                        <h1><span class="light">Sandeep Ravindra</span></h1>
+                        <h5><i class="fa fa-tags" id="tagline"></i> <span>Coder. Web Developer. Thinker. </span></h5>
                     </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
+                <!--<div class=" collapse navbar-collapse navbar-main-collapse">-->
+                <div class="collapse navbar-collapse navbar-main-collapse">
+                    <ul class="nav navbar-nav navbar-right">
                         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                         <li class="hidden">
                             <a href="#page-top"></a>
@@ -72,21 +72,28 @@
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="./images/desert.jpg" width="460" height="345">
+                    <img src="./images/desert.jpg">
+                    <div class="carousel-caption">
+                        <h3>Dubai</h3>
+                        <p>Desert Safari.</p>
+                    </div>
                 </div>
                 <div class="item">
-                    <img src="./images/icpc.jpg" width="460" height="345">
+                    <img src="./images/icpc.jpg">
+                    <div class="carousel-caption">
+                        <h3>ACM ICPC Chennai Multi Provincial Contest 2015</h3>
+                        <p>Secured 6th Position out of 140 teams.</p>
+                    </div>
                 </div>
                 <div class="item">
-                    <img src="./images/sandeep.jpg" width="460" height="345">
-                </div>
-                <div class="item">
-                    <img src="./images/mandapam.jpg" width="460" height="345">
+                    <img src="./images/mandapam.jpg">
+                    <div class="carousel-caption">
+                        <h3>Mandapam, Tamil Nadu</h3>
+                    </div>
                 </div>
             </div>
             <!-- Left and right controls -->
@@ -99,5 +106,116 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+
+        <!-- Container (Quick links) -->
+        <div id="quickies" class="text-center bg-1">
+            <br>
+            <p>Hi, I am Sandeep Ravindra, a 3rd undergrad student at SRM University, Chennai pursuing Computer Science and Engineering, 2017 batch.
+                I'm an ardent learner, actively seeking internship opportunities in software development.
+                Besides involvement in programming and academics, I play Sports like Badminton, Basketball, Cycling, Cricket etc.
+                I love to travel and meet new people.
+                Peer Group, Work Quality and Growth Opportunities are the most important things I am looking for in a job.
+                To know more about me <a role="button">click here</a>.
+            </p>
+            <br>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h4 class="text-center"><strong>About Me</strong></h4><br>
+                    <a href="/aboutme" data-toggle="collapse">
+                        <i class="fa fa-user fa-5x"></i>
+                    </a>
+                    <div>
+                        <p>Find out more about me</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <h4 class="text-center"><strong>My Profile</strong></h4><br>
+                    <a href="https://www.linkedin.com/in/sandeeprds95" target="_blank">
+                        <i class="fa fa-code fa-5x"></i>
+                    </a>
+                    <div>
+                        <p>Work done by me</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <h4 class="text-center"><strong>Contact me</strong></h4><br>
+                    <a href="/contactme" data-toggle="collapse">
+                        <i class="fa fa-comments fa-5x"></i>
+                    </a>
+                    <div>
+                        <p>Drop in a message!</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <h4 class="text-center"><strong>Resume</strong></h4><br>
+                    <a href="/resume" data-toggle="collapse">
+                        <i class="fa fa-download fa-5x"></i>
+                    </a>
+                    <div>
+                        <p>Download in PDF</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Container (At a glance) -->
+        <div id="tour" class="bg-1">
+            <br><br>
+            <div class="container">
+                <h3 class="text-center">::::::::::::::::::::::::::::::   At a Glance   ::::::::::::::::::::::::::::::</h3><br>
+                <div class="row text-center">
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <h3><strong>Education</strong></h3>
+                            <h5>
+                                Undergraduate Student at SRM University, Kattankulathur, Chennai, India.
+                                Major in Computer Science and Engineering.
+                                Batch of 2017
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <h3><strong>From</strong></h3>
+                            <h5>
+                                Born in Vizag, brought up in Bangalore, Karnataka, India.
+                                Currently living in the city of Chennai, Tamil Nadu, India.
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <h3><strong>Experience</strong></h3>
+                            <h5>
+                                Interned at UnderBlu Technology Solutions Pvt. Ltd.
+                                Programmer at SRM Team Robocon.
+                                Technical member at Google Student Club.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-1">
+            <div class="text-center">
+                <a class="up-arrow" href="#page-top" data-toggle="tooltip" title="TO TOP">
+                    <span class="fa fa-chevron-up fa-2x"></span>
+                </a><br><br>
+            </div>
+            <div class="text-center">
+                <a href="https://www.linkedin.com/in/sandeeprds95" target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name"></span></a>
+                <a href="https://www.instagram.com/sandeeprds95/" target="_blank"><i class="fa fa-instagram fa-fw"></i> <span class="network-name"></span></a>
+                <a href="https://www.facebook.com/sandeeprds95" target="_blank"><i class="fa fa-facebook fa-fw"></i> <span class="network-name"></span></a>
+                <a href="https://github.com/Sandeeprds95/" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name"></span></a>
+                <a href="https://twitter.com/ImSandeepR" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
+                <br><br>
+                <h5>Copyright <i class="fa fa-copyright copyright"> Sandeep Ravindra 2015</i></h5>
+                <br>
+            </div>
+
+        </footer>
     </body>
 </html>
