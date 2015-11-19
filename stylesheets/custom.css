@@ -4,6 +4,27 @@
     height: 680px;
     margin: auto;
 }
+
+#fixed-header{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background: transparent;
+}
+
+.not-fixed {
+    background: transparent;
+}
+
+.fixed {
+    top:0;
+    left:0;
+    position:fixed;
+    background: #090926;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: block;
+}
+
 #tagline {
     margin-left: 75px;
 }
@@ -16,10 +37,11 @@
     background: #2d2d30;
     color: #bdbdbd;
 }
-/*
-#quickies {
-    background-image: url("");
-}*/
+
+.name {
+    padding: 0%;
+    margin-top: -10%;
+}
 
 .bg-1 {
     background: #2d2d30;
@@ -33,4 +55,8 @@
 }
 .thumbnail p, .thumbnail h3, .thumbnail h5{
     color: #000;
+}
+
+.network-name {
+    padding-right: 10px;
 }
