@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
         event.preventDefault();
         var hash = this.hash;
