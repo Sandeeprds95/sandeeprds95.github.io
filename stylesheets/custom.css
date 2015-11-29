@@ -142,7 +142,7 @@ hr {
 }
 
 .projectHeading, .courseHeading {
-    color: #83d3c9;
+    color: #16A190;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -161,4 +161,30 @@ hr {
 
 #title-right {
     float: right;
+}
+
+#work {
+    font-size: 16px;
+}
+
+.work-wrapper {
+    color: #16A190;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #fff;
+}
+
+#title-left, #subtitle-left {
+    padding-left: 20px;
+    border:0;
+}
+
+#title-right, #subtitle-right {
+    border:0;
+    float: right;
+    padding-right: 30px;
+}
+
+#desc {
+    border: 0;
 }
