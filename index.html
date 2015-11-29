@@ -9,6 +9,7 @@
         <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="./plugins/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./plugins/animate.css">
         <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="./stylesheets/custom.css">
 
@@ -23,202 +24,343 @@
         <title>Sandeep Ravindra</title>
     </head>
 
-    <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation"  id="fixed-header">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand page-scroll name" href="#page-top">
-                        <h1><span class="light">Sandeep Ravindra</span></h1>
-                        <h5><i class="fa fa-tags" id="tagline"></i> <span>Coder. Web Developer. Thinker. </span></h5>
-                    </a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <!--<div class=" collapse navbar-collapse navbar-main-collapse">-->
-                <div class="collapse navbar-collapse navbar-main-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <!--<li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>-->
-                        <li>
-                            <a class="page-scroll" href="/">Home</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="/aboutme">About me</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="/skills">Skills</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="/career">Career</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="/achievements">Achievements</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="/contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </nav>
-
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="./images/desert.jpg" class="img-responsive" alt="Responsive image">
-                    <div class="carousel-caption">
-                        <h3>Dubai</h3>
-                        <p>Desert Safari.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="./images/icpc.jpg" class="img-responsive" alt="Responsive image">
-                    <div class="carousel-caption">
-                        <h3>ACM ICPC Chennai Multi Provincial Contest 2015</h3>
-                        <p>Secured 6th Position out of 140 teams.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="./images/mandapam.jpg" class="img-responsive" alt="Responsive image">
-                    <div class="carousel-caption">
-                        <h3>Mandapam, Tamil Nadu</h3>
-                    </div>
-                </div>
-            </div>
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-
-        <!-- Container (Quick links) -->
-        <div id="quickies" class="text-center bg-1">
-            <br>
-            <p>Hi, I am Sandeep Ravindra, a 3rd undergrad student at SRM University, Chennai pursuing Computer Science and Engineering, 2017 batch.
-                I'm an ardent learner, actively seeking internship opportunities in software development.
-                Besides involvement in programming and academics, I play Sports like Badminton, Basketball, Cycling, Cricket etc.
-                I love to travel and meet new people.
-                Peer Group, Work Quality and Growth Opportunities are the most important things I am looking for in a job.
-                To know more about me <a role="button">click here</a>.
-            </p>
-            <br>
-            <div class="row">
-                <div class="col-sm-3">
-                    <h4 class="text-center"><strong>About Me</strong></h4><br>
-                    <a href="/aboutme" data-toggle="collapse">
-                        <i class="fa fa-user fa-5x"></i>
-                    </a>
+    <body id="myPage">
+        <article id="main">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
                     <div>
-                        <p>Find out more about me</p>
+                        <a class="navbar-brand" href="#myPage">Sandeep Ravindra</a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#aboutme">About Me</a></li>
+                            <li><a href="#academics">Academics</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#achievements">Achievements</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <h4 class="text-center"><strong>My Profile</strong></h4><br>
-                    <a href="https://www.linkedin.com/in/sandeeprds95" target="_blank">
-                        <i class="fa fa-code fa-5x"></i>
-                    </a>
-                    <div>
-                        <p>Work done by me</p>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <h4 class="text-center"><strong>Contact me</strong></h4><br>
-                    <a href="/contactme" data-toggle="collapse">
-                        <i class="fa fa-comments fa-5x"></i>
-                    </a>
-                    <div>
-                        <p>Drop in a message!</p>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <h4 class="text-center"><strong>Resume</strong></h4><br>
-                    <a href="/resume" data-toggle="collapse">
-                        <i class="fa fa-download fa-5x"></i>
-                    </a>
-                    <div>
-                        <p>Download in PDF</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </nav>
 
-        <!-- Container (At a glance) -->
-        <div id="tour" class="bg-1">
-            <br><br>
-            <div class="container">
-                <h3 class="text-center">::::::::::::::::::::::::::::::   At a Glance   ::::::::::::::::::::::::::::::</h3><br>
-                <div class="row text-center">
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <h3><strong>Education</strong></h3>
-                            <h5>
-                                Undergraduate Student at SRM University, Kattankulathur, Chennai, India.
-                                Major in Computer Science and Engineering.
-                                Batch of 2017
-                            </h5>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="./images/desert.jpg" class="img-responsive" alt="Responsive image">
+                        <div class="carousel-caption">
+                            <h3>Dubai</h3>
+                            <p>Desert Safari.</p>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <h3><strong>From</strong></h3>
-                            <h5>
-                                Born in Vizag, brought up in Bangalore, Karnataka, India.
-                                Currently living in the city of Chennai, Tamil Nadu, India.
-                            </h5>
+                    <div class="item">
+                        <img src="./images/icpc.jpg" class="img-responsive" alt="Responsive image">
+                        <div class="carousel-caption">
+                            <h3>ACM ICPC Chennai Multi Provincial Contest 2015</h3>
+                            <p>Secured 6th Position out of 140 teams.</p>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <h3><strong>Experience</strong></h3>
-                            <h5>
-                                Interned at UnderBlu Technology Solutions Pvt. Ltd.
-                                Programmer at SRM Team Robocon.
-                                Technical member at Google Student Club.
-                            </h5>
+                    <div class="item">
+                        <img src="./images/mandapam.jpg" class="img-responsive" alt="Responsive image">
+                        <div class="carousel-caption">
+                            <h3>Mandapam, Tamil Nadu</h3>
                         </div>
                     </div>
                 </div>
-            </div>
-            <br><br>
-        </div>
-        <!-- Footer -->
-        <footer class="bg-1">
-            <div class="text-center">
-                <a class="up-arrow" href="#page-top" data-toggle="tooltip" title="TO TOP">
-                    <span class="fa fa-chevron-up fa-2x"></span>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
                 </a>
-            <br><br>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <div class="text-center">
-                <a href="https://www.linkedin.com/in/sandeeprds95" target="_blank"><i class="fa fa-linkedin fa-2x"></i> <span class="network-name"></span></a>
-                <a href="https://www.instagram.com/sandeeprds95/" target="_blank"><i class="fa fa-instagram fa-2x"></i> <span class="network-name"></span></a>
-                <a href="https://www.facebook.com/sandeeprds95" target="_blank"><i class="fa fa-facebook fa-2x"></i> <span class="network-name"></span></a>
-                <a href="https://github.com/Sandeeprds95/" target="_blank"><i class="fa fa-github fa-2x"></i> <span class="network-name"></span></a>
-                <a href="https://twitter.com/ImSandeepR" target="_blank"><i class="fa fa-twitter fa-2x"></i> <span class="network-name"></span></a>
-                <br><br>
-                <div style="text-align:center;">
-                    <script type="text/javascript" src="http://services.webestools.com/cpt_pages_views/18042-9-5.js"></script>
+
+            <div id="aboutme" class="container text-center">
+                <div class="myCard">
+                    <h2><strong>About Me</strong></h2>
+                    <p style="font-size: 18px">
+                        Hi, I am SANDEEP RAVINDRA, a 3rd year undergrad student at SRM University, Chennai pursuing Computer Science and Engineering, 2017 batch.
+                        <br>
+                        I'm an ardent learner, actively seeking internship opportunities in software development.
+                        <br>
+                        Besides involvement in programming and academics, I play sports like Badminton, Cycling, Cricket etc.
+                        I love to travel and meet new people.
+                        <br>
+                        Peer Group, Work Quality and Growth Opportunities are the most important things I am looking for in a job.
+                    </p>
+                    <br>
+                    <div id="hobbies">
+                        <div class="row">
+                            <div class="col-sm-4" id="coding">
+                                <h3 class="text-center"><strong>Coding</strong></h3><br>
+                                <i class="fa fa-code fa-5x"  id="about"></i>
+                                <br><br>
+                                <div>
+                                    <p>I discovered my love for coding and development while studying in the 11th grade.
+                                        I feel that this field is not only interesting, but also challenging.
+                                        Building useful products has a sense of satisfaction associated to it which is irreplaceable.
+                                        This is why, after graduation I will be pursuing my career in this field as a full time employee.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4" id="tech">
+                                <h3 class="text-center"><strong>Technology</strong></h3><br>
+                                <i class="fa fa-rocket fa-5x"  id="about"></i>
+                                <br><br>
+                                <div>
+                                    <p>
+                                        Technology has revolutionized the world we're living in.
+                                        The advancements in this field is so immense that, every second that passes by, something new and unique is introduced to this world.
+                                        According to me, advancements in technology will not only help us grow but also bridge the gaps between various countries.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <h3 class="text-center"><strong>Leadership</strong></h3><br>
+                                <i class="fa fa-users fa-5x"  id="about"></i>
+                                <br><br>
+                                <div>
+                                    <p>
+                                        I appreciate the importance of team work and leadership skills.
+                                        Being the Head Boy in the 12th grade and leading several other competitions in B.Tech, I have interacted with some incredible leaders and I continue to draw inspiration from them.
+                                        I have had some experience with leadership roles and I am always up for opportunities to explore more.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4" id="resume">
+                                <h3 class="text-center"><strong>Resume</strong></h3><br>
+                                <a href="" data-toggle="collapse">
+                                    <i class="fa fa-download fa-5x"></i>
+                                </a>
+                                <br><br>
+                                <div>
+                                    <p>Download in PDF</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4" id="travel">
+                                <h3 class="text-center"><strong>Travel</strong></h3><br>
+                                <i class="fa fa-group fa-5x"  id="about"></i>
+                                <br><br>
+                                <div>
+                                    <p>
+                                        I love to explore new places and meet people from different cultures and backgrounds.
+                                        I have had a chance to visit a few countries including Singapore, Malaysia, Dubai and the other emirates.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4" id="contactme">
+                                <h3 class="text-center"><strong>Contact Me</strong></h3><br>
+                                <a href="#contact" data-toggle="collapse">
+                                    <i class="fa fa-comments fa-5x"></i>
+                                </a>
+                                <br><br>
+                                <div>
+                                    <p>Drop in a message!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <br><br>
-                <h5>Copyright <i class="fa fa-copyright"></i> Sandeep Ravindra 2015</h5>
-                <br>
             </div>
-        </footer>
+            <div id="academics" class="container">
+                <div class="myCard  text-center">
+                    <span class="fa fa-graduation-cap fa-5x"></span>
+                    <h2><strong>Academics</strong></h2>
+                    <hr width="50%" align="center" size=5 noshade>
+                    <hr width="30%" align="center" size=5 noshade>
+                    <hr width="10%" align="center" size=5 noshade>
+                    <header>
+                        <h2>
+                            Dream big, and work hard to achieve your goals.
+                            <br>
+                            Remain curious, and keep learning.
+                        </h2>
+                        <p>
+                            I am thankful to my parents and all the teachers who motivated and encouraged me, and made me who I am today.
+                            <br>
+                            Here is a brief record of my academic career so far.
+                        </p>
+                    </header>
+                </div>
+                    <section class="wrapper">
+                        <div class="row">
+                            <div class="acadBox">
+                                <header>
+                                    <h2 class="text-center"><strong>In short...</strong></h2>
+                                </header>
+                                <ul class="fa-ul" id="acadSummary">
+                                    <li><i class="fa-li fa fa-star-o"></i>After four semesters, I currently have a CGPA of <strong>8.98</strong>.</li>
+                                    <li><i class="fa-li fa fa-star-o"></i>I completed my 12th grade at Kendriya Vidyalaya CLRI, Chennai in <strong>2013</strong> with an aggregate score of <strong>93.8%</strong>.</li>
+                                    <li><i class="fa-li fa fa-star-o"></i>I completed my 10th grade at Kendriya Vidyalaya CLRI, Chennai in <strong>2011</strong> with a CGPA of <strong>9</strong>.</li>
+                                    <li><i class="fa-li fa fa-star-o"></i>My interest lies in Data Structures, Algorithms and Networks.</li>
+                                </ul>
+                                <footer class="major">
+                                    <div class="buttons" id="panelButtons">
+                                        <a id="projectContentButton" href="" class="button fit" onclick="event.preventDefault(); toggleSlider('#projectContent');">Projects</a>
+                                        <a id="courseContentButton" href="" class="button fit" onclick="event.preventDefault(); toggleSlider('#courseContent');">Courses</a>
+                                    </div>
+
+                                    <div id="hiddenPanel">
+                                        <div id="projectContent" class="hiddenContent">
+                                            <table class="table borderless projectHeading">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="col-md-8">Tic Tac Toe Game</td>
+                                                    <td class="col-md-4">June'14 - July'14</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="table borderless projectPoints">
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Designed a user Vs. computer Tic Tac Toe game using Minimax Algorithm and Alpha Beta Pruning.</li>
+                                                            <li>Involved knowledge of two player game theory concepts and C++.</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="table borderless projectHeading">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="col-md-8">Movie Theatre Booking System</td>
+                                                    <td class="col-md-4">August'15 - September'15</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="table borderless projectPoints">
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Created a project on Movie Booking System of a theatre as part of the DBMS course.</li>
+                                                            <li>Technologies used are Java, JDBC and MySQL.</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="table borderless projectHeading">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="col-md-8">Sports Complex Development Centre</td>
+                                                    <td class="col-md-4">Jan'13 - Feb'13</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="table borderless projectPoints">
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Created an project on Sports Complex information System with details of the players and their performance statistics.</li>
+                                                            <li>Involved the knowledge of C/C++.</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div id="courseContent" class="hiddenContent">
+                                            <div style="float:left">
+                                                <table class="table borderless courseHeading">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="title-left">Core Computer Science Courses</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="table borderless coursePoints">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <ul>
+                                                                <li>Programming using C</li>
+                                                                <li>Object Oriented Programming using C++/Java</li>
+                                                                <li>Data Structures and Algorithm Design</li>
+                                                                <li>Digital Computer Fundamentals</li>
+                                                                <li>Computer Networks</li>
+                                                                <li>Computer Organisation and Architechture</li>
+                                                                <li>TCP/IP Fundamentals</li>
+                                                                <li>Operating Systems</li>
+                                                                <li>Theory of Computation</li>
+                                                                <li>Database Management Systems</li>
+                                                                <li>Operating Systems</li>
+                                                                <li>Object Oriented Design and Analysis</li>
+                                                                <li>Microprocessor and Interfacing</li>
+                                                                <li>Cloud Computing</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div style="display: inline-block;">
+                                                <table class="table borderless courseHeading">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="title-left">Honor Courses</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="table borderless coursePoints">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <ul>
+                                                                <li>Introduction to programming in C - IIT Kanpur</li>
+                                                                <li>HTML/CSS - Udacity</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="table borderless courseHeading">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="title-left">Other Courses</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="table borderless coursePoints">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <ul>
+                                                                <li>Japanese Language I and II</li>
+                                                                <li>Fundamentals of Entreprenuership</li>
+                                                                <li>Discrete Mathematics</li>
+                                                                <li>Soft Skills</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </article>
     </body>
 </html>

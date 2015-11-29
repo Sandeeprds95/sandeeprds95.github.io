@@ -5,58 +5,163 @@
     margin: auto;
 }
 
-#fixed-header{
-    padding-top: 20px;
-    padding-bottom: 10px;
-    background: transparent;
-}
-
-.not-fixed {
-    background: transparent;
-}
-
-.fixed {
-    top:0;
-    left:0;
-    position:fixed;
-    background: #090926;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    display: block;
-}
-
-#tagline {
-    margin-left: 75px;
-}
-
 .carousel-caption {
     color: black;
 }
 
-.carousel .slide {
-    background: #2d2d30;
-    color: #bdbdbd;
+.navbar-default .navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #122b40;
 }
 
-.name {
-    padding: 0%;
-    margin-top: -10%;
+.navbar-default .navbar-nav>li>a {
+    font-weight: bold;
+    font-size: 15px;
+    color: #122b40;
 }
 
-.bg-1 {
-    background: #2d2d30;
-    color: #bdbdbd;
+.navbar-default {
+    background-color: #D9D9D9;
+    opacity: 0.6;
+    border-color: transparent;
 }
-.bg-1 h3 {
-    color: #fff;
+
+.container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
 }
-.bg-1 p {
-    font-style: italic;
+
+body {
+    background-image: url('../images/bg.png');
+    background-repeat: repeat;
 }
-.thumbnail p, .thumbnail h3, .thumbnail h5{
+
+.myCard {
+    padding: 10px 10px 10px 10px;
     color: #000;
+    opacity: 0.8;
+    /*
+    background-color: #D9D9D9;
+    */
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
 }
 
-.network-name {
-    padding-right: 10px;
+#about {
+    color: #337ab7;
+}
+
+#tech {
+    border-right: 1px solid #CDCACA;
+    border-left: 1px solid #CDCACA;
+}
+
+#resume {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #CDCACA;
+}
+
+#contactme {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #CDCACA;
+}
+
+#travel {
+    margin-top: 20px;
+    border-right: 1px solid #CDCACA;
+    border-left: 1px solid #CDCACA;
+}
+
+hr {
+    height: 1px;
+}
+
+#hobbies p{
+    font-size: 16px;
+}
+
+#academics {
+    font-size: 16px;
+}
+
+.wrapper {
+    margin: 10px 10% 10px 10%;
+    background-color: #83d3c9;
+}
+
+.acadBox {
+    color: #fff;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+#panelButtons a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    display: inline;
+    width: 145px;
+    height: 45px;
+    background: #628984;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+
+#projectContentButton {
+    margin-left: 30%;
+    margin-right: 3%;
+    margin-top: 15px;
+    margin-bottom: 5%;
+}
+
+#courseContentButton {
+    margin-right: 25%;
+    margin-top: 15px;
+    margin-bottom: 5%;
+}
+
+#acadSummary li{
+    padding-bottom: 5px;
+}
+
+#acadSummary {
+    margin-top: 20px;
+}
+
+#hiddenPanel {
+    margin-left: 5%;
+    margin-right: 11%;
+    background-color: #EEE;
+}
+
+.projectHeading, .courseHeading {
+    color: #83d3c9;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.projectPoints, .coursePoints {
+    color: #7c8081;
+}
+
+#projectContent, #courseContent{
+    display: none;
+}
+
+#courseContent {
+    padding-bottom: 45px;
+}
+
+#title-right {
+    float: right;
 }

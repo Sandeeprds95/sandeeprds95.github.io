@@ -1,23 +1,60 @@
-/**
- * Created by Sandeep Ravindra on 12-11-2015.
- */
-var myHeader = $('#fixed-header');
-myHeader.data( 'position', myHeader.position() );
-$(window).scroll(function(){
-    var hPos = myHeader.data('position'), scroll = getScroll();
-    if ( hPos.top < scroll.top ){
-        myHeader.addClass('fixed');
-    } else {
-        myHeader.removeClass('fixed');
-        myHeader.addClass('not-fixed');
-    }
+$(document).ready(function(){
+
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 900, function(){
+            window.location.hash = hash;
+        });
+    });
 });
 
-function getScroll () {
-    var b = document.body;
-    var e = document.documentElement;
-    return {
-        left: parseFloat( window.pageXOffset || b.scrollLeft || e.scrollLeft ),
-        top: parseFloat( window.pageYOffset || b.scrollTop || e.scrollTop )
-    };
+function toggleSlider(name) {
+    if ($("#hiddenPanel").is(":visible")) {
+        if ($(name).is(":visible")) {
+            $(name).animate(
+                {
+                    opacity: "0"
+                },
+                600,
+                function(){
+                    $("#hiddenPanel").slideUp(
+                        function() {
+                            $(name).hide();
+                            $(name+"Button").removeClass("selected");
+                        }
+                    );
+                }
+            );
+        } else {
+            $("#panelButtons .selected").removeClass("selected");
+            $("#hiddenPanel").slideUp(600, function(){
+                $("#hiddenPanel").children().hide();
+                $(name+"Button").addClass("selected");
+                $(name).show();
+                $("#hiddenPanel").slideDown(600, function(){
+                    $(name).animate(
+                        {
+                            opacity: "1"
+                        },
+                        600
+                    );
+                });
+            });
+        }
+    }
+    else {
+        $(name+"Button").addClass("selected");
+        $(name).show();
+        $("#hiddenPanel").slideDown(600, function(){
+            $(name).animate(
+                {
+                    opacity: "1"
+                },
+                600
+            );
+        });
+    }
 }
