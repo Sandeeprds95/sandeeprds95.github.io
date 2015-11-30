@@ -62,7 +62,7 @@ body {
     border-top: 1px solid #CDCACA;
 }
 
-#contactme {
+#contact {
     padding-top: 10px;
     margin-top: 10px;
     border-top: 1px solid #CDCACA;
@@ -113,16 +113,16 @@ hr {
     font-weight: bold;
 }
 
+#panelButtons {
+    text-align: center;
+}
 
 #projectContentButton {
-    margin-left: 30%;
-    margin-right: 3%;
     margin-top: 15px;
     margin-bottom: 5%;
 }
 
 #courseContentButton {
-    margin-right: 25%;
     margin-top: 15px;
     margin-bottom: 5%;
 }
