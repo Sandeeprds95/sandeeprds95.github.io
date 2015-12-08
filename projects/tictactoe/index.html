@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="TIC TAC TOE GAME">
+
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./plugins/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./plugins/animate.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="./stylesheets/custom.css">
+
+        <!-- Scripts -->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+        <script src="./plugins/jquery.min.js"></script>
+        <script src="./plugins/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Custom Scripts -->
+        <script type="text/javascript" src="./scripts/main.js"></script>
+        <script type="text/javascript" src="./scripts/constants.js"></script>
+        <script type="text/javascript" src="./scripts/handlers.js"></script>
+
+        <title>Tic Tac Toe | Sandeep Ravindra</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+                <ul class="nav navbar-nav header">
+                    <li><a onclick="resetGame()" href="#">Reset</a></li>
+                    <li><a data-toggle="modal" data-target="#scoreModal" href="#">Score</a></li>
+                    <li ><a data-toggle="modal" data-target="#helpModal" href="#">Help</a></li>
+                </ul>
+        </nav>
+
+        <!-- Help Modal Starts-->
+        <div class="modal fade" id="helpModal" role="dialog">
+            <div class="modal-dialog">
+    
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Tic Tac Toe Help</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Use the buttons below to change the play mode between Manual mode, Computer plays X, and Computer Plays O. Changing mode resets the game.</p>
+                        <p>Click the Score button to reveal game statistics.</p>
+                        <p>Click Reset to terminate current game and start again. The current game will not be evaluated in the statistics.</p>
+                        <p>Click Help to reveal this Help dialog. Click Close or X to dismiss.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Help Modal Ends  -->
+
+        <!-- Score Board Modal Starts-->
+        <div class="modal fade" id="scoreModal" role="dialog">
+            <div class="modal-dialog">
+        
+                <!-- Score Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Tic Tac Toe ScoreBoard</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="gamesPlayed"></p>
+                        <p id="XWins"></p>
+                        <p id="OWins"></p>
+                        <p id="numOfDraws"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Score Board Modal Ends -->
+
+        <!-- Grid Layout Starts -->
+        <div class="container-fluid">
+            <div class="square">
+                <div id="0" class="col-xs-4" onclick="gridClick(this)"><!-- <hr class="top-horizontal"> <hr class="left-vertical">--><span>&nbsp;</span></div>
+                <div id="1" class="col-xs-4" onclick="gridClick(this)"><!-- <hr class="middle-vertical"> --><span>&nbsp;</span></div>
+                <div id="2" class="col-xs-4" onclick="gridClick(this)"><!-- <hr class="right-vertical"> --><span>&nbsp;</span></div>
+                        
+                <div id="3" class="col-xs-4" onclick="gridClick(this)"><!-- <hr class="middle-horizontal"> --><span>&nbsp;</span></div>
+                <div id="4" class="col-xs-4" onclick="gridClick(this)"><!-- <hr class="left-diagonal"><hr class="right-diagonal"> --><span>&nbsp;</span></div>
+                <div id="5" class="col-xs-4" onclick="gridClick(this)"><span>&nbsp;</span></div>
+
+                <div id="6" class="col-xs-4" onclick="gridClick(this)"><!-- <hr class="bottom-horizontal"> --><span>&nbsp;</span></div>
+                <div id="7" class="col-xs-4" onclick="gridClick(this)"><span>&nbsp;</span></div>
+                <div id="8" class="col-xs-4" onclick="gridClick(this)"><span>&nbsp;</span></div>
+            </div>    
+        </div>
+        <!-- Grid Layout Ends -->
+
+        <!-- Buttons Starts -->
+        <div class="row modeBtn">
+            <button type="button" id="10" class="btn btn-success" onclick="toggleMode(this)">Manual Mode</button>
+            <button type="button" id="11" class="btn btn-danger" onclick="toggleMode(this)">Computer plays X</button>
+            <button type="button" id="12" class="btn btn-danger" onclick="toggleMode(this)">Computer plays O</button>
+        </div>
+        <!-- Button Ends -->
+
+        <!-- Winner/Draw Modal Starts -->
+        <div class="modal fade" id="winnerModal" role="dialog">
+            <div class="modal-dialog">
+    
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title" >Tic Tac Toe</h3>
+                    </div>
+                    <div class="modal-body" id="displayWinner">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Winner/Draw Modal Ends -->
+    </body>
+</html>

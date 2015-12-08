@@ -1,0 +1,47 @@
+.navbar-default .navbar-nav>li>a {
+    color: #EB99F0;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #FFF;
+    outline: none;
+}
+.modeBtn {
+    text-align: center;
+    margin-top: 20px;
+}
+.navbar-default {
+    background-color: #39204F;
+}
+.header {
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: 20px;
+}
+div {
+    padding: 20px;
+    border: 1px solid #ffa;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: center;
+}
+.container-fluid {
+    border: none;
+    margin-top: 50px;
+    height: 500px;
+}
+.square {
+    width: 500px;
+    height: 500px;
+    border: none;
+    margin: 0 auto;
+    background: #403E3C;
+}
+.col-xs-4 {
+    height: 33.333333333333333333333333333%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+h1 {
+    color: white;
+}
