@@ -10,7 +10,6 @@ var wins = [
 	[0,4,8],[2,4,6]
 ];
 
-
 var gameBoard;
 var currentPlayer = XPLAYER;
 var gameInProgress;

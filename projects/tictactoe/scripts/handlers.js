@@ -33,7 +33,7 @@ function gridClick(grid) {
         return;
     }
     
-    var emptyList = getEmptyGrids(gameBoard);                   //To check if the clicked grid is EMPTY or not
+    var emptyList = getEmptyGrids(gameBoard);              //To check if the clicked grid is EMPTY or not
     if(emptyList.indexOf(parseInt(grid.id)) == EMPTY) {
         return;
     }

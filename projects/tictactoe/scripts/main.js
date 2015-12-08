@@ -1,8 +1,8 @@
 //Returns EMPTY GRID values
 function initGameBoard() {
     return [EMPTY, EMPTY, EMPTY,
-             EMPTY, EMPTY, EMPTY,
-             EMPTY, EMPTY, EMPTY];
+            EMPTY, EMPTY, EMPTY,
+            EMPTY, EMPTY, EMPTY];
 };
 
 //Returns the GRIDS that are empty
