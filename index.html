@@ -9,6 +9,7 @@
   <link rel="canonical" href="https://sandeeprds95.github.io/">
   <link rel="icon" href="images/favicon.png">
   <link rel="stylesheet" href="stylesheets/portfolio.css">
+  <script defer src="scripts/tenure.js"></script>
 </head>
 <body id="myPage">
   <a class="skip" href="#main">Skip to content</a>
@@ -17,7 +18,8 @@
       <a class="brand" href="#myPage" aria-label="Sandeep Ravindra, home"><span>SR</span> Sandeep Ravindra</a>
       <nav aria-label="Main navigation">
         <a href="#work">Experience</a>
-        <a href="#projects">Projects</a>
+        <a href="#academics">Education</a>
+        <a href="#achievements">Honors</a>
         <a href="#contactme">Contact</a>
       </nav>
     </div>
@@ -30,8 +32,9 @@
         <h1 id="name">Sandeep<br>Ravindra<span class="period">.</span></h1>
         <p class="role">Software Development Manager at Amazon</p>
         <p class="location">Seattle, Washington</p>
+        <p class="intro-note">I lead a software development team at Amazon in Seattle. Outside work, I love traveling, exploring new places, and playing sports. Lately, I’ve been spending more time learning about personal finance and investing.</p>
         <div class="actions">
-          <a class="button primary" href="#work">Explore my work</a>
+          <a class="button primary" href="#work">Explore my experience</a>
           <a class="button outline" href="https://www.linkedin.com/in/sandeeprds95/">LinkedIn</a>
         </div>
       </div>
@@ -45,89 +48,80 @@
         <div class="section-intro">
           <p class="eyebrow"><span class="dash"></span> Career</p>
           <h2 id="work-title">Experience</h2>
-          <p>My path from hands-on software development to engineering management.</p>
+          <p>From software development in India to engineering leadership in Seattle.</p>
+          <div class="tenure-card">
+            <p class="meta">Total time at Amazon</p>
+            <strong data-total-tenure>Since June 2017</strong>
+          </div>
         </div>
         <div class="roles">
-          <article class="entry">
-            <p class="meta">Amazon · Seattle</p>
-            <h3>Software Development Manager</h3>
-            <p>I lead a software development team at Amazon. I bring more than eight years of software development experience to engineering management.</p>
-            <a class="text-link" href="https://www.linkedin.com/in/sandeeprds95/#experience">View experience on LinkedIn</a>
-          </article>
-          <article class="entry">
+          <ol class="timeline" aria-label="Amazon roles" data-amazon-timeline>
+            <li class="entry" data-role>
+              <p class="meta">Amazon · Seattle, Washington</p>
+              <h3>Software Development Manager</h3>
+              <p class="role-dates" data-range>Present</p>
+              <p>I lead a software development team at Amazon.</p>
+            </li>
+            <li class="entry" data-role>
+              <p class="meta">Amazon · Seattle, Washington</p>
+              <h3>Software Development Engineer</h3>
+              <p class="role-dates" data-range hidden></p>
+            </li>
+            <li class="entry" data-role data-start="2017-06">
+              <p class="meta">Amazon · Chennai, India</p>
+              <h3>Software Development Engineer</h3>
+              <p class="role-dates" data-range>Started June 2017</p>
+            </li>
+          </ol>
+          <article class="entry internship">
             <p class="meta">Underblu Technologies · Summer 2015</p>
             <h3>Front-End Development Intern</h3>
             <p>Built a web application for cab operators using AngularJS, JavaScript, and jQuery.</p>
           </article>
-          <article class="entry">
-            <p class="meta">SRM Team Robocon · 2014</p>
-            <h3>Robotics Programmer</h3>
-            <p>Programmed Arduino microcontrollers for a Y-chassis robot operated with a PS2 controller.</p>
-          </article>
+          <a class="text-link" href="https://www.linkedin.com/in/sandeeprds95/#experience">View experience on LinkedIn</a>
         </div>
       </div>
     </section>
 
-    <section class="wrap projects" id="projects" aria-labelledby="projects-title">
-      <p class="eyebrow"><span class="dash"></span> Software projects</p>
-      <h2 id="projects-title">Selected projects</h2>
-      <p class="section-description">Projects from my time at SRM, from a student housing app to a game that evaluates its next move.</p>
-
-      <div class="project-grid">
-        <article class="project">
-          <div class="project-art rooms" aria-hidden="true">
-            <div class="floor"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          </div>
-          <div class="project-copy">
-            <p class="meta">MongoDB · Express · AngularJS · Node.js</p>
-            <h3>Hostel Allocation System</h3>
-            <p>Gave students a way to select their preferred hostel block, floor, and room online.</p>
-            <a class="text-link" href="https://github.com/Sandeeprds95/hostel-allocation-system">Hostel allocation source code</a>
-          </div>
-        </article>
-        <article class="project">
-          <div class="project-art game" aria-hidden="true">
-            <div class="board"><span>×</span><span></span><span>○</span><span></span><span>×</span><span></span><span>○</span><span></span><span>×</span></div>
-          </div>
-          <div class="project-copy">
-            <p class="meta">Minimax · Alpha-beta pruning</p>
-            <h3>Tic-Tac-Toe</h3>
-            <p>Built a game opponent that evaluates possible moves and prunes branches that cannot improve the outcome.</p>
-            <div class="inline-links">
-              <a class="text-link" href="projects/tictactoe/">Play the demo</a>
-              <a class="text-link" href="https://github.com/Sandeeprds95/tictactoe">Tic-tac-toe source code</a>
-            </div>
-          </div>
-        </article>
-        <article class="project">
-          <div class="project-art reminder" aria-hidden="true">
-            <div class="notification"><i></i><span></span><span></span></div>
-          </div>
-          <div class="project-copy">
-            <p class="meta">Python · Beautiful Soup</p>
-            <h3>Result Reminder</h3>
-            <p>Checked the university announcements page for exam results and played a local alert when results went live.</p>
-            <a class="text-link" href="https://github.com/Sandeeprds95/result-reminder">Result reminder source code</a>
-          </div>
-        </article>
+    <section class="wrap education" id="academics" aria-labelledby="education-title">
+      <div>
+        <p class="eyebrow"><span class="dash"></span> Academic background</p>
+        <h2 id="education-title">Education</h2>
+      </div>
+      <div class="education-card">
+        <p class="meta">2013–2017 · Chennai, India</p>
+        <h3>SRM University</h3>
+        <p>Computer Science and Engineering</p>
+        <p>Google Students Club and SRM Team Robocon</p>
       </div>
     </section>
 
-    <section class="background" id="academics" aria-labelledby="background-title">
-      <div class="wrap section-layout">
-        <div class="section-intro">
-          <p class="eyebrow"><span class="dash"></span> Education &amp; recognition</p>
-          <h2 id="background-title">Where I started</h2>
-          <p>Computer Science and Engineering at SRM University, 2013–2017.</p>
-        </div>
-        <article class="recognition" id="achievements">
-          <img src="images/icpc.jpg" alt="Team photo from the ACM ICPC Chennai contest" loading="lazy">
-          <div>
-            <p class="meta">Competitive programming · 2015</p>
-            <h3>ACM ICPC Chennai</h3>
-            <p>Placed sixth out of 140 teams in the Multi-Provincial Contest.</p>
-          </div>
-        </article>
+    <section class="awards" id="achievements" aria-labelledby="honors-title">
+      <div class="wrap">
+        <p class="eyebrow"><span class="dash"></span> Recognition</p>
+        <h2 id="honors-title">Honors &amp; awards</h2>
+        <ul class="award-grid">
+          <li>
+            <p class="meta">Amazon · Q2 2021</p>
+            <h3>Ownership, Bias for Action, and Customer Obsession</h3>
+            <p>Quarterly recognition from Amazon’s DRMP organization.</p>
+          </li>
+          <li>
+            <p class="meta">Amazon · Q2 2020</p>
+            <h3>Insist on the Highest Standards</h3>
+            <p>Quarterly recognition from Amazon’s DRMP organization.</p>
+          </li>
+          <li>
+            <p class="meta">Science Olympiad Foundation · 2012</p>
+            <h3>International Cyber Olympiad</h3>
+            <p>Ranked 172nd internationally and 13th nationally in the finals.</p>
+          </li>
+          <li>
+            <p class="meta">IIT Guwahati · 2012</p>
+            <h3>International Robotics Competition</h3>
+            <p>Won first place at the competition organized by IIT Guwahati.</p>
+          </li>
+        </ul>
       </div>
     </section>
 
